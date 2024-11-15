@@ -1,0 +1,35 @@
+Unterschiede zu normalem React
+
+- Server-Side Rendering (SSR) und Static Site Generation (SSG): Next.js rendert Seiten auf dem Server oder generiert sie statisch, während React nur client-seitig rendert.
+- Dateibasiertes Routing: Next.js nutzt das Dateisystem für das Routing, während in React meist ein Router (wie React Router) nötig ist.
+- Integrierte API-Routen: Backend-APIs können in Next.js direkt im Projekt erstellt werden; React benötigt ein separates Backend.
+- Image Optimization: Next.js optimiert Bilder automatisch für bessere Ladezeiten, React hat diese Funktion nicht eingebaut.
+- SEO-Optimierung: SSR und SSG machen Next.js SEO-freundlicher als reines client-seitiges React.
+
+
+
+Aufbau einer Next.js App
+
+1. Installation:
+   npx create-next-app@latest
+   cd projektname
+   
+
+2. Projektstruktur:
+   - pages/: Enthält die Seiten und steuert das Routing (jede Datei entspricht einer Route).
+   - public/: Statische Dateien (z.B. Bilder).
+   - components/: Wiederverwendbare Komponenten.
+   - api/: API-Routen für Backend-Logik.
+
+3. SSR und SSG nutzen:
+   - getServerSideProps: Für SSR-Datenabruf in Seiten.
+   - getStaticProps: Für SSG-Datenabruf zur Build-Zeit.
+
+
+Vorteile von Next.js
+
+- Bessere Performance: Durch SSR und SSG sowie automatische Optimierung.
+- SEO-freundlich: Server-seitiges Rendering verbessert SEO.
+- Einfaches Routing: Keine zusätzliche Router-Bibliothek erforderlich.
+- Vercel-Integration: Einfache und optimierte Bereitstellung.
+- Flexibel: Kombination von SSR, SSG, und client-seitigem Rendering möglich.
