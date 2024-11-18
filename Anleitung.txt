@@ -1,0 +1,55 @@
+1. Schritt
+
+	npm version and node version for setup 
+
+	npx create-next-app@latest
+	
+	Need to install the following packages:
+	create-next-app@15.0.3
+	Ok to proceed? (y) y
+
+	Typescript?-> yes
+	Eslint -> no
+	Tailwind CSS -> no 
+	src/directory -> no 
+	App/Router -> no 
+	import alias -> no
+
+2. Schritt 
+	die 3 Seiten erstellen ohne Logik 
+	nur die Komponenten, buttons, inputfleder und so weiter. 
+
+3. Firebase Konfigurieren und im Backend einbinden 
+	Schritte mit screenshots dokumentieren.
+	
+	a) Erstelle ein neues Firebase-Projekt:
+
+	Gehe zur Firebase Console.
+	Klicke auf "Projekt hinzufügen" oder wähle ein bestehendes Projekt.
+	Gib deinem Projekt einen Namen und klicke auf "Weiter".
+	Deaktiviere Google Analytics (falls nicht erforderlich) und klicke auf "Projekt erstellen".
+
+	b)Aktiviere Firebase Authentication:
+
+	Navigiere in der Firebase Console zu "Authentication".
+	Klicke auf "Erste Schritte".
+	Aktiviere die E-Mail/Passwort-Anmeldung:
+	Gehe zu "Sign-in-Methode".
+	Aktiviere die Option "E-Mail/Passwort" und klicke auf "Speichern".
+
+	c) Aktiviere den Firestore (optional, falls du Daten speichern willst):
+
+	Gehe zu "Firestore-Datenbank".
+	Klicke auf "Datenbank erstellen".
+	Wähle den Produktionsmodus oder Testmodus (für Entwicklung empfohlen).
+	Wähle die Standardregion für deine Datenbank und klicke auf "Fertigstellen".
+
+
+4. API-Routen erstellen
+	Dokumentieren 
+	login 
+	signup
+	verifyToken 
+5. Protected Routes
+	mit verifyToken
+	Middleware von Next.js für die Route /Adventskalender einrichten. 
